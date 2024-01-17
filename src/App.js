@@ -2,6 +2,7 @@ import './App.css';
 import {Box, Typography} from "@mui/material";
 import ComponentExample from "./ComponentExample/ComponentExample";
 import ComponentExampleLive from "./ComponentExampleLive/ComponentExampleLive";
+import MockTaskComp from "./components/MockTaskComp/MockTaskComp";
 
 function App() {
     return (
@@ -11,6 +12,8 @@ function App() {
             </Typography>
             <ComponentExample/>
             <ComponentExampleLive/>
+            <MockTaskComp/>
+
         </Box>
     );
 }
