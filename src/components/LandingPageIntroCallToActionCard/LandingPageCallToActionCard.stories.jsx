@@ -1,8 +1,8 @@
-import MockTaskComp from './MockTaskComp';
+import LandingPageCallToActionCard from './LandingPageCallToActionCard';
 
 export default {
     title: 'Mock Task',
-    component: MockTaskComp,
+    component: LandingPageCallToActionCard,
     tags: ['autodocs'],
     parameters: {
         layout: 'fullscreen',

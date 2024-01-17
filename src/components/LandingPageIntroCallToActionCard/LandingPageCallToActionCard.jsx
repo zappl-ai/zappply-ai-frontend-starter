@@ -1,13 +1,12 @@
 import React from 'react';
 import {Box, Button} from "@mui/material";
 
-function MockTaskComp(props) {
+function LandingPageCallToActionCard() {
     return (
         <div>
             <Box sx={{
                 display : 'flex',
                 justifyContent: 'space-around',
-
             }
             }>
 
@@ -36,4 +35,4 @@ function MockTaskComp(props) {
     );
 }
 
-export default MockTaskComp;
+export default LandingPageCallToActionCard;
