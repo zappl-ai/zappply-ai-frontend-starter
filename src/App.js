@@ -1,18 +1,25 @@
-import './App.css';
-import {Box, Typography} from "@mui/material";
-import ComponentExample from "./ComponentExample/ComponentExample";
-import ComponentExampleLive from "./ComponentExampleLive/ComponentExampleLive";
+import React, { useState } from 'react';
+import JobTargeting from './ComponentExample/JobTargetting';
+import JobSearchTargetting from './ComponentExample/JobSearchTargetting'; // Adjust the path as needed
 
-function App() {
+const App = () => {
+    const [showJobSearch, setShowJobSearch] = useState(false);
+    const initialJobTitles = ['Full-Stack Engineer', 'Software Engineer', 'Devops Engineer', 'Cloud Devops Engineer', 'Machine Learning Engineer'];
+
+    const handleJobTargetClick = () => {
+        setShowJobSearch(true);
+    };
+
+    const handleClose = () => {
+        setShowJobSearch(false);
+    };
+
     return (
-        <Box>
-            <Typography variant="h4" component="h1" gutterBottom>
-                zappply ai starter kit
-            </Typography>
-            <ComponentExample/>
-            <ComponentExampleLive/>
-        </Box>
+        <div>
+            <JobTargeting title="Job Titles" jobTitles={initialJobTitles} onOpen={handleJobTargetClick} />
+            {showJobSearch && <JobSearchTargetting initialJobTitles={initialJobTitles} onClose={handleClose} />}
+        </div>
     );
-}
+};
 
 export default App;

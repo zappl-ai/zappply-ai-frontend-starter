@@ -1,0 +1,45 @@
+.job-targeting-container {
+    background-color: #ffffff; /* Your preferred background color for the boxes */
+
+    display: flex;
+    align-items: center; /* This will vertically align the items if they have different heights */
+    gap: 10px; /* This sets a gap between each item */
+    border: 1px solid gray; /* Your preferred border color */
+    border-radius: 15px; /* This will give you the rounded corners */
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Shows an ellipsis if the text overflows */
+
+}
+
+.title-box {
+    width: fit-content;
+    font-weight: bold;
+    display: flex;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides any text that overflows the container */
+    text-overflow: ellipsis; /* Shows an ellipsis if the text overflows */
+    flex-shrink: 0; /* Prevents the title from shrinking below its content size */
+}
+
+.job-type-box {
+    font-weight: bold;
+    display: flex;
+    height: 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+.job-title-box {
+    margin: 2px;
+    border: 1px solid #7f82f5; /* Your preferred border color */
+    border-radius: 10px; /* Rounded corners for the individual boxes */
+    padding: 10px 20px;
+    background-color: #ffffff; /* Your preferred background color for the boxes */
+    color: #7f82f5; /* Your preferred background color for the boxes */
+    cursor: pointer;
+    white-space: nowrap; /* Ensures the text doesn't wrap */
+    /* Add more styles like text styling as needed */
+}

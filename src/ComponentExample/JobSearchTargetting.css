@@ -1,0 +1,94 @@
+.job-search-targetting-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.input-box {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid gray; /* Your preferred border color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 1vh 3vh 1vh;
+}
+
+
+.job-search-input-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-search-targetting-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.job-title-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px 10px 50px 10px;
+    border-radius: 10px;
+    border: 2px solid #7f82f5; /* Your preferred border color */
+}
+
+.job-title-item {
+    background: #7f82f5;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.add-button {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background: gray;
+    color: white;
+    border: 0;
+    border-radius: 8px; /* This will give you the rounded corners */
+    flex-wrap: wrap;
+    padding: 1vh 2vh 1vh 2vh;
+    margin: 20px;
+}
+
+.remove-button {
+    margin-left: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-button, .confirm-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-button:disabled {
+    background: #ccc;
+}
